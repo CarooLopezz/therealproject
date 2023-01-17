@@ -6,10 +6,10 @@
     justify-content: space-between;
     background-color: pink;
     .nav-link {
-        color: white;
+        color: $colorSecundario ;
     }
     @media (max-width: 576px) {
-        color: white;
+        color: $colorSecundario;
         font-size: 30px;
         padding: 10px;
         flex-direction: column;

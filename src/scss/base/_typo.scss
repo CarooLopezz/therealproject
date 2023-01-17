@@ -10,3 +10,20 @@
     }
     
 }
+.contorno {
+    border-radius: 80px;
+    border-style: dotted; 
+    @media (max-width: 576px) {
+        flex-wrap: wrap; 
+    }
+}
+.colorTitulo {
+    color: black; }
+
+.fondoTitulo {
+    background-color: #ff7f50; }
+
+.ro {
+    font-family: 'Roboto', sans-serif;
+    margin: 20px;
+    font-weight: 500 px; }
