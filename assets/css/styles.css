@@ -19,10 +19,7 @@ a {
   -webkit-text-stroke: 2px;
   -webkit-text-fill-color: yellow;
   font-size: 50px; }
-  @media (max-width: 576px) {
-    .titulo {
-      left: 10px; } }
-
+  
 .contorno {
   border-radius: 80px;
   border-style: dotted; }
@@ -54,17 +51,19 @@ a {
   border-style: dotted; }
   @media (max-width: 576px) {
     .contorno {
-      flex-wrap: wrap; } }
+      flex-wrap: wrap;
+      color: transparent;
+} }
 
 .video {
   bottom: -632px;
-   }
+  }
   @media (max-width: 576px) {
     .video {
       display: flex;
       justify-content: center;
       align-content: center;
-      left:-355px; } }
+      left:-370px; } }
 
 .mapa {
   top: 853px;
@@ -81,17 +80,17 @@ a {
 .tarjeta {
   position: relative;
   display: inline-block;
-  margin-left: 100px;
-  margin-bottom: 50px;
-  margin-top: 48px;
   width: 655px; }
-  .tarjeta:hover {
-    transform: translateY(-15px);
-    box-shadow: 0px 0px 12px 16px black; }
-    @media (max-width: 576px) {
-      .tarjeta:hover {
-        width: 300px;
-        left: 250px; } }
+
+.tarjeta:hover {
+  transform: translateY(-15px);
+  box-shadow: 0px 0px 12px 16px black; }
+@media (max-width: 576px) {
+  .tarjeta {
+    width: 300px;
+    left: 250px;
+    display:inline
+} }
 
 .final {
   display: flex;
@@ -149,48 +148,11 @@ a {
 .fondi {
   background-image: linear-gradient(#F58D73, #DE8A5D, #DE645D); }
 
-.bnpequeño {
-  width: 350px;
-  height: 200px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 15px;
-  margin: 10px 20px 10px 10px;
-  border: black solid 10px;
-  overflow: hidden; }
 
-.bn {
-  padding: 10px;
-  margin: 30 px;
-  background-color: black;
-  color: black;
-  font-size: 20px;
-  padding-left: 10px;
-  margin: 20px 30px 10px 10px;
-  border-color: #8b0000; }
-
-.bnm1 {
-  padding: 10px;
-  margin: 30 px;
-  background-color: blue;
-  color: white;
-  font-size: 20px;
-  padding-left: 10px;
-  margin: 20px 30px 10px 10px;
-  border-color: #8b0000;
-  height: 48px; }
 
 .bn1 {
   display: flex; }
 
-.tarjetas .bnpequeño, .bnpequeño {
-  width: 350px;
-  height: 200px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 15px; }
 
 .tarjetas {
   display: flex;
@@ -242,12 +204,17 @@ a {
   100% {
     transform: rotate(360deg); } }
 
+@media (max-width:576px) {
+  .spinner {
+    display: none;
+  }
+}
+
 .card {
   display: flex;
   flex-wrap: wrap; }
 
-.esp {
-  padding: 10px; }
+
 
 .esp-grande {
   font-size: 30px; }
@@ -266,10 +233,6 @@ a {
   background-color: #333;
   margin: 5px; }
 
-.esp {
-  font-size: large;
-  padding: 10px;
-  font-family: 'Roboto', sans-serif; }
 
 .tarjeta2 {
   line-height: 25px;
@@ -278,7 +241,7 @@ a {
   @media (max-width: 576px) {
     .tarjeta2 {
       font-size: calc(1em + 1vw); } }
-  .tarjeta2 .tarjeta2 {
+  .tarjeta2  {
     animation-name: mover;
     animation-duration: 8s;
     animation-iteration-count: infinite;
@@ -305,32 +268,6 @@ a {
     transform: transalte(0, 0); }
   100% {
     transform: translate(450px, 0); } }
-
-.tarjetas .bnpequeño, .bnpequeño {
-  width: 350px;
-  height: 200px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 15px; }
-
-.bnpequeño {
-  margin: 10px 20px 10px 10px;
-  border: black solid 10px;
-  overflow: hidden; }
-
-.tarjetas .bnpequeño, .bnpequeño {
-  width: 350px;
-  height: 200px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 15px; }
-
-.bnpequeño {
-  margin: 10px 20px 10px 10px;
-  border: black solid 10px;
-  overflow: hidden; }
 
 @media (max-width: 576px) {
   .moverDerecha {
@@ -409,10 +346,10 @@ a {
   font-size: 25px;
   justify-content: space-between;
   background-color: pink; }
+.nav-link:hover {
+  color:blue;
 
-.nav-link {
-  color: white; }
-
+}
 .carousel-inner {
   width: 650px;
   height: 400px;
@@ -427,9 +364,7 @@ a {
 .tarjeta {
   position: relative;
   display: inline-block;
-  margin-left: 100px;
-  margin-bottom: 50px;
-  margin-top: 48px;
+  
   width: 655px; }
 
 .tarjeta:hover {
@@ -504,15 +439,23 @@ a {
   background-image: linear-gradient(#EB9E58, #EBA96E, #EBB584); }
 
 .ya {
-  color: #000000;
-  padding: none; }
+  color: #000000; }
 
 .bnpequeño {
   margin: 10px 20px 10px 10px;
-  border: olivedrab 6px;
-  width: 190px;
-  height: 120px; }
-
+  width: 350px;
+  height: 200px;
+  border: black solid 10px;
+  overflow: hidden;}
+  .bnpequeño {
+  overflow: hidden; }
+    @media (max-width:576px) {
+      .bnpequeño{
+        width: 220px;
+        height: 150px;
+      }
+    }
+  
 .bn1 {
   display: flex; }
 
@@ -524,34 +467,60 @@ a {
 .tamparraf {
   width: 147px; }
 
-.bnm1 {
-  padding: 10px;
-  margin: 30 px;
-  background-color: blue;
-  color: white;
-  font-size: 20px;
-  padding-left: 10px;
-  margin: 20px 30px 10px 10px;
-  border-color: #8b0000;
-  height: 48px; }
-
 .precio1 {
   height: 48px; }
 
 .esp-grande {
   font-size: 30px; }
-
+.bn {
+    padding: 10px;
+    margin: 30 px;
+    background-color: brown;
+    color: white;
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 20px 30px 10px 10px;
+    border-color: yellowgreen; }
+    @media (max-width:576px) {
+      .bn {
+        width: 170px;
+      }
+    }
+  
+.bnm1 {
+    padding: 10px;
+    margin: 30 px;
+    background-color: lightseagreen;
+    color: black;
+    font-size: 20px;
+    padding-left: 10px;
+    margin: 20px 30px 10px 10px;
+    border-color: pink;
+    height: 48px; }
+  
 .bnm {
   padding: 10px;
   margin: 30 px;
-  background-color: blue;
-  color: white;
+  background-color: lightpink;
+  color:black;
   font-size: 20px;
   padding-left: 10px;
   margin: 20px 30px 10px 10px;
-  border-color: #8b0000;
+  border-color: gray;
   flex-direction: row; }
+@media (max-width:576px){
+  .apartado {
+    display: none;
+  }
 
+}
+
+
+.esp {
+  font-size: large ;
+  padding: 10px;
+  font-family: 'Roboto', sans-serif; }
+  
 .ro {
   font-family: 'Roboto', sans-serif;
   margin: 20px; }
@@ -608,7 +577,7 @@ td {
   0% {
     transform: transalte(0, 0); }
   100% {
-    transform: translate(450px, 0); } }
+    transform: translate(40px, 0); } }
 
 .tarjeta3 {
   animation-name: mover2;
@@ -621,10 +590,49 @@ td {
   0% {
     transform: transalte(0, 0); }
   100% {
-    transform: translate(450px, 0); } }
+    transform: translate(30px, 0); } }
 
-.tarjetaFondo {
-  width: 650px; }
+@media (max-width:576px) {
+  .tarjeta2  {
+    animation-play-state: paused;
+    width: 300px;
+    display: inline;
+  }
+}
+
+@media(max-width:576px) {
+  .tarjetaFondo{
+
+    width: 58px;
+    height: 110px;
+    text-decoration: none;
+    display: inline;
+  }
+}
+@media (max-width:576px) {
+  .tarjeta3 {
+    object-position: 102px;
+    animation-play-state: paused;
+    width: 85px;
+    height: 46px;
+    position: relative;
+    bottom:-559px;
+    left:0px;
+
+  }
+}
+
+@media(max-width:576px) {
+  .moverDerecha{
+    display:none;
+  }
+}
+@media(max-width:576px) {
+  .carousel1 {
+    display:none;
+  }
+}
+
 
 .espacio3 {
   margin: 20px;
@@ -649,19 +657,28 @@ td {
 .todo {
   background-color: #E6CD3E; }
 
+
 /*Noticias BOOTSTRAP*/
+.fonde {
+  background-image: linear-gradient(#FACD3E, #DEDA33, #CFDE33, #FAE94E); }
 .card {
   display: flex;
   flex-wrap: wrap; }
 
 .tarjetasNOT {
-  position: absolute;
+  position: relative;
   display: flex;
-  justify-content: space-around; }
-
-.fonde {
-  background-image: linear-gradient(#FACD3E, #DEDA33, #CFDE33, #FAE94E); }
-
+  justify-content: space-between;
+  width: 1359px;
+  
+  }
+@media(max-width:576px) {
+.finalnoti {
+  position:absolute;
+  top:1658px;
+  
+}
+}
 /*contactos BOOTSTRAP*/
 .fondi {
   background-image: linear-gradient(#F58D73, #DE8A5D, #DE645D); }
@@ -687,7 +704,7 @@ h3 {
 /*Breakpoints*/
 @media (max-width: 576px) {
   .titulo {
-    left: 80px; } }
+    left: 60px; } }
 
 @media (max-width: 576px) {
   .nav {
@@ -698,25 +715,26 @@ h3 {
     flex-direction: column;
     align-items: center;
     background-color: transparent;
-    left:-500px; } }
+    left:-530px; } }
+  
 
 @media (max-width: 576px) {
   .carousel-inner {
     width: 300px;
     height: 400px;
-    left: 25px;
+    left: 0px;
     overflow: hidden; } }
 
 @media (max-width: 576px) {
   .tarjeta {
     position: relative;
     width: 850px;
-    left: 250px;
+    left: 240px;
     height: 55px; } }
 
 @media (max-width: 576px) {
   .parrafo {
-    width: 230px;
+    width: 210px;
     height: 378px;
     left: -348px;
     top: -158px; } }
@@ -725,7 +743,7 @@ h3 {
   .imgtar {
     position: relative;
     width: 410px;
-    left: -358px; 
+    left: -370px; 
     top: -150px;
     height: 370px;
   } }
@@ -742,21 +760,21 @@ h3 {
     align-content: center;
     top:45px;
     height: 300px;
-    width: 380px;
+    width: 330px;
   } }
 @media(max-width: 576px) {
   .mapa {
     position: relative;
     top:65px;
-    left: -355px;
+    left: -370px;
     height: 300px;
-    width: 380px;
+    width: 330px;
   }
 }
 @media (max-width:576px) {
   .TiMutuales {
     position: relative;
-    left: 50px;
+    left: 20px;
     top: 818px;
     margin-top: -99px;
   }
@@ -768,31 +786,27 @@ h3 {
     top: 808px;
     width: 300px;
     height: 796px;
-    left: 40px;
+    left: 0px;
     display: flex;
     flex-direction: column;
     background-color: transparent; } }
 @media (max-width:576px) {
   .frase {
     left:-10px;
+    width: 158px;
   }
 }
 @media (max-width: 576px) {
   .final1 {
     position: relative;
     top: 1500px;
-    left: 5px;
-    width: 347px; } }
+    left: -20px;
+    width: 300px; } }
 
 @media (max-width: 576px) {
   .tarjetas {
     display: flex;
     flex-wrap: wrap; } }
-@media (max-width: 576px) {
-  .bnpequeño {
-    margin: 0px;
-  }
-}
 
 @media (max-width: 576px) {
   .tarjeta2 {
@@ -816,10 +830,10 @@ h3 {
 @media (max-width: 576px) {
   .tarjetasNOT {
     display: flex;
-    flex-direction: column;
+    flex-direction: column ;
     align-items: center;
     text-align: center;
-    left: 550px; } }
+    left: -500px; } }
 
 @media (max-width: 576px) {
   .final2 {
