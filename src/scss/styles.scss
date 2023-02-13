@@ -34,6 +34,11 @@ a {
   text-decoration: none;
   color: inherit; }
 
+body{
+    width: 100wv;
+    overflow-x: hidden;
+  }
+
 .titulo {
   color: black;
   position: relative;
@@ -707,7 +712,7 @@ td {
   background-image: linear-gradient(#F58D73, #DE8A5D, #DE645D); }
 
 form {
-  width: 300px; }
+  width: 250px; }
 
 .fondoDisc {
   background-color: #dda0dd; }
@@ -719,7 +724,14 @@ form {
   background-color: #8fbc8f; }
 
 .info {
-  display: inline-block; }
+  position: relative;
+  display: inline-block;
+  left:450px ;
+  top:-275px; }
+.info1 {
+  position: relative;
+  left:47px;
+}
 
 h3 {
   font-weight: bold; }
