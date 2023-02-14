@@ -84,19 +84,31 @@ body{
 
 .video {
   bottom: -632px;
-  }
+  display: flex;
   @media (max-width: 576px) {
-    .video {
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      left:-370px; } }
+    position: absolute;
+    top: -45px;
+    height: 300px;
+    width: 230px;
+    left: 258px;
+        
+  } 
+}
 
 .mapa {
   top: 853px;
   left: 700px;
   height: 400px;
-  width: 500px; }
+  width: 500px; 
+  @media (max-width: 576px) {
+      position: absolute;
+      top: -65px;
+      left: 370px;
+      height: 300px;
+      width: 330px;
+    }
+  }
+
 
 .mutuales {
   background-color: #20b2aa;
@@ -297,12 +309,6 @@ body{
   100% {
     transform: translate(450px, 0); } }
 
-@media (max-width: 576px) {
-  .moverDerecha {
-    position: absolute;
-    left: 350px;
-    align-items: center;
-    width: 494px; } }
 
 @media (max-width: 576px) {
   .hidden {
@@ -421,16 +427,33 @@ a {
   border-style: dotted; }
 
 .video {
+  display: flex;
   bottom: -632px;
-  height: 400px;
-  width: 500px; }
+  height: 450px;
+  width: 500px;
+  @media (max-width: 576px) {
+        position: absolute;
+        top:-80px;
+        height: 570px;
+        width: 310px;
+        left:-360px;
+      } 
+  } 
 
 .mapa {
+  display: flex;
   top: 853px;
   left: 700px;
   height: 400px;
-  width: 500px; }
-
+  width: 500px; 
+  @media (max-width: 576px) { 
+      position: absolute;
+      top:355px;
+      left: -360px;
+      height: 300px;
+      width: 320px;
+    }
+}
 .frase {
   color: red;
   border-style: dashed;
@@ -563,16 +586,6 @@ a {
 .fondo {
   background-image: linear-gradient(#8DD2FF, #41FA95, #3FFAC6, #2EFAE8); }
 
-table {
-  border: solid 1px;
-  border-collapse: collapse;
-  margin: 10px; }
-
-th,
-td {
-  border: solid 1px;
-  padding: 10 px; }
-
 .tarjeta_priyfin {
   color: #8b0000; }
 
@@ -650,17 +663,28 @@ td {
   }
 }
 
-@media(max-width:576px) {
-  .moverDerecha{
-    display:none;
-  }
-}
-@media(max-width:576px) {
+@media (max-width: 576px) {
   .carousel1 {
-    display:none;
-  }
-}
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 254px;
+    overflow: hidden;
+    
+    } }
+  
 
+.carusel2 {
+  display:none;
+  @media(max-width:576px) {
+    display:block;
+    flex-wrap: wrap;
+    position: absolute;
+    width: 258px;
+
+  }
+
+}
 
 .espacio3 {
   margin: 20px;
@@ -712,7 +736,13 @@ td {
   background-image: linear-gradient(#F58D73, #DE8A5D, #DE645D); }
 
 form {
-  width: 250px; }
+  width: 250px;
+    @media(max-width:576px){
+      display: flex;
+      
+      flex-direction: column;
+
+    }}
 
 .fondoDisc {
   background-color: #dda0dd; }
@@ -723,11 +753,6 @@ form {
 .fondi {
   background-color: #8fbc8f; }
 
-.info {
-  position: relative;
-  display: inline-block;
-  left:450px ;
-  top:-275px; }
 .info1 {
   position: relative;
   left:47px;
@@ -753,12 +778,7 @@ h3 {
     left:-530px; } }
   
 
-@media (max-width: 576px) {
-  .carousel-inner {
-    width: 300px;
-    height: 400px;
-    left: 0px;
-    overflow: hidden; } }
+
 
 @media (max-width: 576px) {
   .tarjeta {
@@ -787,25 +807,7 @@ h3 {
   .contorno {
     flex-wrap: wrap; } }
 
-@media (max-width: 576px) {
-  .video {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    top:45px;
-    height: 300px;
-    width: 330px;
-  } }
-@media(max-width: 576px) {
-  .mapa {
-    position: relative;
-    top:65px;
-    left: -370px;
-    height: 300px;
-    width: 330px;
-  }
-}
+
 @media (max-width:576px) {
   .TiMutuales {
     position: relative;
@@ -851,16 +853,12 @@ h3 {
   .tarjeta3 {
     font-size: calc(1em + 1vw); } }
 
-@media (max-width: 576px) {
-  .moverDerecha {
-    position: absolute;
-    left: 350px;
-    align-items: center;
-    width: 494px; } }
 
 @media (max-width: 576px) {
   .hidden {
     display: none; } }
+
+
 
 @media (max-width: 576px) {
   .tarjetasNOT {

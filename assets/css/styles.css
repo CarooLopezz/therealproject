@@ -194,10 +194,6 @@ a {
 .bnpequeño {
   width: 350px;
   height: 200px;
-  padding-left: 10px;
-  padding-top: 10px;
-  padding-right: 10px;
-  padding-bottom: 15px;
   margin: 10px 20px 10px 10px;
   border: black solid 10px;
   overflow: hidden;
@@ -446,20 +442,18 @@ a {
 }
 @media (max-width: 576px) {
   .video {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    top: 45px;
+    position: absolute;
+    top: -45px;
     height: 300px;
-    width: 330px;
+    width: 230px;
+    left: 258px;
   }
 }
 @media (max-width: 576px) {
   .mapa {
-    position: relative;
-    top: 65px;
-    left: -370px;
+    position: absolute;
+    top: -65px;
+    left: 370px;
     height: 300px;
     width: 330px;
   }
@@ -623,21 +617,32 @@ body {
 }
 .video {
   bottom: -632px;
+  display: flex;
 }
-
 @media (max-width: 576px) {
   .video {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    left: -370px;
+    position: absolute;
+    top: -45px;
+    height: 300px;
+    width: 230px;
+    left: 258px;
   }
 }
+
 .mapa {
   top: 853px;
   left: 700px;
   height: 400px;
   width: 500px;
+}
+@media (max-width: 576px) {
+  .mapa {
+    position: absolute;
+    top: -65px;
+    left: 370px;
+    height: 300px;
+    width: 330px;
+  }
 }
 
 .mutuales {
@@ -1021,16 +1026,36 @@ a {
 }
 
 .video {
+  display: flex;
   bottom: -632px;
-  height: 400px;
+  height: 450px;
   width: 500px;
+}
+@media (max-width: 576px) {
+  .video {
+    position: absolute;
+    top: -80px;
+    height: 570px;
+    width: 310px;
+    left: -360px;
+  }
 }
 
 .mapa {
+  display: flex;
   top: 853px;
   left: 700px;
   height: 400px;
   width: 500px;
+}
+@media (max-width: 576px) {
+  .mapa {
+    position: absolute;
+    top: 355px;
+    left: -360px;
+    height: 300px;
+    width: 320px;
+  }
 }
 
 .frase {
@@ -1284,15 +1309,25 @@ td {
   }
 }
 @media (max-width: 576px) {
-  .moverDerecha {
-    display: none;
+  .carousel {
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    left: 454px;
+    overflow: hidden;
   }
+}
+.carusel2 {
+  display: none;
 }
 @media (max-width: 576px) {
-  .carousel1 {
-    display: none;
+  .carusel2 {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
   }
 }
+
 .espacio3 {
   margin: 20px;
   list-style-type: none;
@@ -1401,14 +1436,6 @@ h3 {
   }
 }
 @media (max-width: 576px) {
-  .carousel-inner {
-    width: 300px;
-    height: 400px;
-    left: 0px;
-    overflow: hidden;
-  }
-}
-@media (max-width: 576px) {
   .tarjeta {
     position: relative;
     width: 850px;
@@ -1436,26 +1463,6 @@ h3 {
 @media (max-width: 576px) {
   .contorno {
     flex-wrap: wrap;
-  }
-}
-@media (max-width: 576px) {
-  .video {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    top: 45px;
-    height: 300px;
-    width: 330px;
-  }
-}
-@media (max-width: 576px) {
-  .mapa {
-    position: relative;
-    top: 65px;
-    left: -370px;
-    height: 300px;
-    width: 330px;
   }
 }
 @media (max-width: 576px) {
@@ -1506,14 +1513,6 @@ h3 {
 @media (max-width: 576px) {
   .tarjeta3 {
     font-size: calc(1em + 1vw);
-  }
-}
-@media (max-width: 576px) {
-  .moverDerecha {
-    position: absolute;
-    left: 350px;
-    align-items: center;
-    width: 494px;
   }
 }
 @media (max-width: 576px) {

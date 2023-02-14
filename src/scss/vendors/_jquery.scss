@@ -49,25 +49,23 @@
     .contorno {
       flex-wrap: wrap; } }
   
-  @media (max-width: 576px) {
-    .video {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      top:45px;
-      height: 300px;
-      width: 330px;
-    } }
-  @media(max-width: 576px) {
-    .mapa {
-      position: relative;
-      top:65px;
-      left: -370px;
+@media (max-width: 576px) {
+    .video{
+        position: absolute;
+        top:-45px;
+        height: 300px;
+        width: 230px;
+        left:258px;
+} } 
+@media (max-width: 576px) { 
+  .mapa{
+      position: absolute;
+      top:-65px;
+      left: 370px;
       height: 300px;
       width: 330px;
     }
-  }
+}
   @media (max-width:576px) {
     .TiMutuales {
       position: relative;
@@ -112,13 +110,6 @@
   @media (max-width: 576px) {
     .tarjeta3 {
       font-size: calc(1em + 1vw); } }
-  
-  @media (max-width: 576px) {
-    .moverDerecha {
-      position: absolute;
-      left: 350px;
-      align-items: center;
-      width: 494px; } }
   
   @media (max-width: 576px) {
     .hidden {
